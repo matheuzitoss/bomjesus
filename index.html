@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio Arraiá Bom Jesus</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="imagens/logo.png" alt="Arraiá Bom Jesus" class="logo">
+        <h1>Cardápio</h1>
+    </header>
+    <main>
+        <section class="cardapio">
+            <h2>Bebidas</h2>
+            <ul>
+                <li class="item">
+                    Água - R$ 2,50
+                    <div class="quantity-controls">
+                        <button class="minus" onclick="decrementQuantity(this)" data-price="2.50">-</button>
+                        <span id="quantity1">0</span>
+                        <button class="plus" onclick="incrementQuantity(this)" data-price="2.50">+</button>
+                    </div>
+                </li>
+                <li class="item">
+                    Chá de Amendoim - R$ 8,00
+                    <div class="quantity-controls">
+                        <button class="minus" onclick="decrementQuantity(this)" data-price="8.00">-</button>
+                        <span id="quantity1">0</span>
+                        <button class="plus" onclick="incrementQuantity(this)" data-price="8.00">+</button>
+                    </div>
+                </li>
+                <li class="item">
+                    Energético Baly (250ml) - R$ 7,00
+                    <div class="quantity-controls">
+                        <button class="minus" onclick="decrementQuantity(this)" data-price="7.00">-</button>
+                        <span id="quantity1">0</span>
+                        <button class="plus" onclick="incrementQuantity(this)" data-price="7.00">+</button>
+                    </div>
+                </li>
+                <li class="item">
+                    Quentão - R$ 7,00
+                    <div class="quantity-controls">
+                        <button class="minus" onclick="decrementQuantity(this)" data-price="7.00">-</button>
+                        <span id="quantity1">0</span>
+                        <button class="plus" onclick="incrementQuantity(this)" data-price="7.00">+</button>
+                    </div>
+                </li>
+                <li class="item">
+                    Refrigerante Caçulinha - R$ 3,50
+                    <div class="quantity-controls">
+                        <button class="minus" onclick="decrementQuantity(this)" data-price="3.50">-</button>
+                        <span id="quantity1">0</span>
+                        <button class="plus" onclick="incrementQuantity(this)" data-price="3.50">+</button>
+                    </div>
+                </li>
+                <li class="item">
+                    Refrigerante Copo (300ml) - R$ 4,00
+                    <div class="quantity-controls">
+                        <button class="minus" onclick="decrementQuantity(this)" data-price="4.00">-</button>
+                        <span id="quantity1">0</span>
+                        <button class="plus" onclick="incrementQuantity(this)" data-price="4.00">+</button>
+                    </div>
+                </li>
+                <li class="item">
+                    Suco Caixinha (250ml) - R$ 4,00
+                    <div class="quantity-controls">
+                        <button class="minus" onclick="decrementQuantity(this)" data-price="4.00">-</button>
+                        <span id="quantity1">0</span>
+                        <button class="plus" onclick="incrementQuantity(this)" data-price="4.00">+</button>
+                    </div>
+                </li>
+                <li class="item">
+                    Suco de Milho (200ml) - R$ 9,00
+                    <div class="quantity-controls">
+                        <button class="minus" onclick="decrementQuantity(this)" data-price="9.00">-</button>
+                        <span id="quantity1">0</span>
+                        <button class="plus" onclick="incrementQuantity(this)" data-price="9.00">+</button>
+                    </div>
+                </li>
+                <li class="item">
+                    Vinho Quente - R$ 7,00
+                    <div class="quantity-controls">
+                        <button class="minus" onclick="decrementQuantity(this)" data-price="7.00">-</button>
+                        <span id="quantity1">0</span>
+                        <button class="plus" onclick="incrementQuantity(this)" data-price="7.00">+</button>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section class="cardapio">
+            <h2>Doces</h2>
+            <ul>
+                <li class="item">
+                    Bolo - R$ 6,00
+                    <div class="quantity-controls">
+                        <button class="minus" onclick="decrementQuantity(this)" data-price="6.00">-</button>
+                        <span id="quantity1">0</span>
+                        <button class="plus" onclick="incrementQuantity(this)" data-price="6.00">+</button>
+                    </div>
+                </li>
+                <li class="item">
+                    Canjica - R$ 8,00
+                    <div class="quantity-controls">
+                        <button class="minus" onclick="decrementQuantity(this)" data-price="8.00">-</button>
+                        <span id="quantity1">0</span>
+                        <button class="plus" onclick="incrementQuantity(this)" data-price="8.00">+</button>
+                    </div>
+                </li>
+                <li class="item">
+                    Curau - R$ 9,00
+                    <div class="quantity-controls">
+                        <button class="minus" onclick="decrementQuantity(this)" data-price="9.00">-</button>
+                        <span id="quantity1">0</span>
+                        <button class="plus" onclick="incrementQuantity(this)" data-price="9.00">+</button>
+                    </div>
+                </li>
+                <li class="item">
+                    Doces no pote - R$ 8,00
+                    <div class="quantity-controls">
+                        <button class="minus" onclick="decrementQuantity(this)" data-price="8.00">-</button>
+                        <span id="quantity1">0</span>
+                        <button class="plus" onclick="incrementQuantity(this)" data-price="8.00">+</button>
+                    </div>
+                </li>
+                <li class="item">
+                    Fondue (frutas) - R$ 12,00
+                    <div class="quantity-controls">
+                        <button class="minus" onclick="decrementQuantity(this)" data-price="12.00">-</button>
+                        <span id="quantity1">0</span>
+                        <button class="plus" onclick="incrementQuantity(this)" data-price="12.00">+</button>
+                    </div>
+                </li>
+                <li class="item">
+                    Fondue (só morango) - R$ 15,00
+                    <div class="quantity-controls">
+                        <button class="minus" onclick="decrementQuantity(this)" data-price="15.00">-</button>
+                        <span id="quantity1">0</span>
+                        <button class="plus" onclick="incrementQuantity(this)" data-price="15.00">+</button>
+                    </div>
+                </li>
+                <li class="item">
+                    Maçã do Amor - R$ 6,00
+                    <div class="quantity-controls">
+                        <button class="minus" onclick="decrementQuantity(this)" data-price="6.00">-</button>
+                        <span id="quantity1">0</span>
+                        <button class="plus" onclick="incrementQuantity(this)" data-price="6.00">+</button>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section class="cardapio">
+            <h2>Comidas</h2>
+            <ul>
+                <li class="item">
+                    Batata Frita - R$ 9,00
+                    <div class="quantity-controls">
+                        <button class="minus" onclick="decrementQuantity(this)" data-price="9.00">-</button>
+                        <span id="quantity1">0</span>
+                        <button class="plus" onclick="incrementQuantity(this)" data-price="9.00">+</button>
+                    </div>
+                </li>
+                <li class="item">
+                    Cachorro Quente - R$ 8,00
+                    <div class="quantity-controls">
+                        <button class="minus" onclick="decrementQuantity(this)" data-price="8.00">-</button>
+                        <span id="quantity1">0</span>
+                        <button class="plus" onclick="incrementQuantity(this)" data-price="8.00">+</button>
+                    </div>
+                </li>
+                <li class="item">
+                    Caldos - R$ 9,00
+                    <div class="quantity-controls">
+                        <button class="minus" onclick="decrementQuantity(this)" data-price="9.00">-</button>
+                        <span id="quantity1">0</span>
+                        <button class="plus" onclick="incrementQuantity(this)" data-price="9.00">+</button>
+                    </div>
+                </li>
+                <li class="item">
+                    Churrasco (Espeto) - R$ 7,00
+                    <div class="quantity-controls">
+                        <button class="minus" onclick="decrementQuantity(this)" data-price="7.00">-</button>
+                        <span id="quantity1">0</span>
+                        <button class="plus" onclick="incrementQuantity(this)" data-price="7.00">+</button>
+                    </div>
+                </li>
+                <li class="item">
+                    Lanche (Calabresa ou Pernil) - R$ 14,00
+                    <div class="quantity-controls">
+                        <button class="minus" onclick="decrementQuantity(this)" data-price="14.00">-</button>
+                        <span id="quantity1">0</span>
+                        <button class="plus" onclick="incrementQuantity(this)" data-price="14.00">+</button>
+                    </div>
+                </li>
+                <li class="item">
+                    Milho - R$ 8,00
+                    <div class="quantity-controls">
+                        <button class="minus" onclick="decrementQuantity(this)" data-price="8.00">-</button>
+                        <span id="quantity1">0</span>
+                        <button class="plus" onclick="incrementQuantity(this)" data-price="8.00">+</button>
+                    </div>
+                </li>
+                <li class="item">
+                    Minipizza - R$ 9,00
+                    <div class="quantity-controls">
+                        <button class="minus" onclick="decrementQuantity(this)" data-price="9.00">-</button>
+                        <span id="quantity1">0</span>
+                        <button class="plus" onclick="incrementQuantity(this)" data-price="9.00">+</button>
+                    </div>
+                </li>
+                <li class="item">
+                    Pamonha - R$ 10,00
+                    <div class="quantity-controls">
+                        <button class="minus" onclick="decrementQuantity(this)" data-price="10.00">-</button>
+                        <span id="quantity1">0</span>
+                        <button class="plus" onclick="incrementQuantity(this)" data-price="10.00">+</button>
+                    </div>
+                </li>
+                <li class="item">
+                    Pastel - R$ 9,00
+                    <div class="quantity-controls">
+                        <button class="minus" onclick="decrementQuantity(this)" data-price="9.00">-</button>
+                        <span id="quantity1">0</span>
+                        <button class="plus" onclick="incrementQuantity(this)" data-price="9.00">+</button>
+                    </div>
+                </li>
+                <li class="item">
+                    Pipoca (Doce ou Salgada) - R$ 3,00
+                    <div class="quantity-controls">
+                        <button class="minus" onclick="decrementQuantity(this)" data-price="3.00">-</button>
+                        <span id="quantity1">0</span>
+                        <button class="plus" onclick="incrementQuantity(this)" data-price="3.00">+</button>
+                    </div>
+                </li>
+                <li class="item">
+                    Salgados (Cada) - R$ 6,00
+                    <div class="quantity-controls">
+                        <button class="minus" onclick="decrementQuantity(this)" data-price="6.00">-</button>
+                        <span id="quantity1">0</span>
+                        <button class="plus" onclick="incrementQuantity(this)" data-price="6.00">+</button>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section class="cardapio">
+            <h2>Brincadeiras</h2>
+            <ul>
+                <li class="item">
+                    Boliche Americano - R$ 6,00
+                    <div class="quantity-controls">
+                        <button class="minus" onclick="decrementQuantity(this)" data-price="6.00">-</button>
+                        <span id="quantity1">0</span>
+                        <button class="plus" onclick="incrementQuantity(this)" data-price="6.00">+</button>
+                    </div>
+                </li>
+                <li class="item">
+                    Jogo do Órgão - R$ 6,00
+                    <div class="quantity-controls">
+                        <button class="minus" onclick="decrementQuantity(this)" data-price="6.00">-</button>
+                        <span id="quantity1">0</span>
+                        <button class="plus" onclick="incrementQuantity(this)" data-price="6.00">+</button>
+                    </div>
+                </li>
+                <li class="item">
+                    Peixinho - R$ 6,00
+                    <div class="quantity-controls">
+                        <button class="minus" onclick="decrementQuantity(this)" data-price="6.00">-</button>
+                        <span id="quantity1">0</span>
+                        <button class="plus" onclick="incrementQuantity(this)" data-price="6.00">+</button>
+                    </div>
+                </li>
+                <li class="item">
+                    Piscina de Bolinha (5 minutos) - R$ 5,00
+                    <div class="quantity-controls">
+                        <button class="minus" onclick="decrementQuantity(this)" data-price="5.00">-</button>
+                        <span id="quantity1">0</span>
+                        <button class="plus" onclick="incrementQuantity(this)" data-price="5.00">+</button>
+                    </div>
+                </li>
+                <li class="item">
+                    Cama elástica (5 minutos) - R$ 5,00
+                    <div class="quantity-controls">
+                        <button class="minus" onclick="decrementQuantity(this)" data-price="5.00">-</button>
+                        <span id="quantity1">0</span>
+                        <button class="plus" onclick="incrementQuantity(this)" data-price="5.00">+</button>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        
+        <div class="calculate">
+        <button  onclick="calculateTotal()">Calcule quanto gastará!</button>
+
+        <div id="popup" class="popup" onclick="fecharPopup()">
+            <div class="popup-content" onclick="event.stopPropagation()">
+            <span class="close" onclick="fecharPopup()">&times;</span>
+            <h3>Compre:</h3>
+            <p id="totalAmount">R$ 0,00</p>
+            <h3>Em Fichas</h3>
+          </div>
+        </div>
+    </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
