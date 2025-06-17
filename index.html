@@ -4,20 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cardápio Arraiá Bom Jesus</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <link rel="stylesheet" href="styles.css?v=4">
+    <link rel="stylesheet" href="slide.css">
 </head>
 <body>
     <header>
-        <img src="imagens/Base para o site.png" alt="Arraiá Bom Jesus" class="logo">
-        <h1 id="titulo">Tabela<br> De Preços</h1>
+        <img src="imagens/header (1).png" alt="Arraiá Bom Jesus" class="logo">
     </header>
     <main>
+        <h2 class="calculadora">CALCULADORA DE FICHAS</h2>
             <section class="cardapio">
-            <h2>Comidas Salgadas</h2>
+            <h2 id="ComidaSalgadas">Comidas Salgadas</h2>
             <ul>
                 <li class="item">
                     <span class="item-name">Batata Frita</span>
-                    <span class="item-value">R$ 10,00</span> 
+                    <span class="item-valuev">R$ 10,00</span> 
                     <div class="quantity-controls">
                         <button class="minus" onclick="decrementQuantity(this)" data-price="10.00">-</button>
                         <span id="quantity1">0</span>
@@ -26,7 +30,7 @@
                 </li>
                 <li class="item">
                     <span class="item-name">Cachorro Quente</span>
-                    <span class="item-value">R$ 10,00</span>
+                    <span class="item-valuev">R$ 10,00</span>
                     <div class="quantity-controls">
                         <button class="minus" onclick="decrementQuantity(this)" data-price="10.00">-</button>
                         <span id="quantity1">0</span>
@@ -34,7 +38,8 @@
                     </div>
                 </li>
                 <li class="item">
-                    Caldos - R$ 10,00
+                    <span class="item-name">Caldos</span>
+                    <span class="item-valuev">R$ 10,00</span> 
                     <div class="quantity-controls">
                         <button class="minus" onclick="decrementQuantity(this)" data-price="10.00">-</button>
                         <span id="quantity1">0</span>
@@ -42,7 +47,8 @@
                     </div>
                 </li>
                 <li class="item">
-                    Churrasco (Espeto) - R$ 8,00
+                    <span class="item-name">Churrasco (Espeto)</span>
+                    <span class="item-valuev">R$ 8,00</span> 
                     <div class="quantity-controls">
                         <button class="minus" onclick="decrementQuantity(this)" data-price="8.00">-</button>
                         <span id="quantity1">0</span>
@@ -50,7 +56,8 @@
                     </div>
                 </li>
                 <li class="item">
-                    Lanche (Calabresa ou Pernil) - R$ 15,00
+                    <span class="item-name">Lanche Calabresa</span>
+                    <span class="item-valuev">R$ 15,00</span>
                     <div class="quantity-controls">
                         <button class="minus" onclick="decrementQuantity(this)" data-price="15.00">-</button>
                         <span id="quantity1">0</span>
@@ -58,7 +65,17 @@
                     </div>
                 </li>
                 <li class="item">
-                    Milho - R$ 9,00
+                    <span class="item-name">Lanche de Pernil</span>
+                    <span class="item-valuev">R$ 15,00</span>
+                    <div class="quantity-controls">
+                        <button class="minus" onclick="decrementQuantity(this)" data-price="15.00">-</button>
+                        <span id="quantity1">0</span>
+                        <button class="plus" onclick="incrementQuantity(this)" data-price="15.00">+</button>
+                    </div>
+                </li>
+                <li class="item">
+                    <span class="item-name">Milho</span> 
+                    <span class="item-valuev">R$ 9,00</span> 
                     <div class="quantity-controls">
                         <button class="minus" onclick="decrementQuantity(this)" data-price="9.00">-</button>
                         <span id="quantity1">0</span>
@@ -66,7 +83,8 @@
                     </div>
                 </li>
                 <li class="item">
-                    Minipizza - R$ 10,00
+                    <span class="item-name">Minipizza</span> 
+                    <span class="item-valuev">R$ 10,00</span> 
                     <div class="quantity-controls">
                         <button class="minus" onclick="decrementQuantity(this)" data-price="10.00">-</button>
                         <span id="quantity1">0</span>
@@ -74,7 +92,8 @@
                     </div>
                 </li>
                 <li class="item">
-                    Pamonha - R$ 10,00
+                    <span class="item-name">Pastel</span>
+                    <span class="item-valuev">R$ 10,00</span> 
                     <div class="quantity-controls">
                         <button class="minus" onclick="decrementQuantity(this)" data-price="10.00">-</button>
                         <span id="quantity1">0</span>
@@ -82,15 +101,8 @@
                     </div>
                 </li>
                 <li class="item">
-                    Pastel - R$ 10,00
-                    <div class="quantity-controls">
-                        <button class="minus" onclick="decrementQuantity(this)" data-price="10.00">-</button>
-                        <span id="quantity1">0</span>
-                        <button class="plus" onclick="incrementQuantity(this)" data-price="10.00">+</button>
-                    </div>
-                </li>
-                <li class="item">
-                    Pipoca (Doce ou Salgada) - R$ 5,00
+                    <span class="item-name">Pipoca Salgada</span>
+                    <span class="item-valuev">R$ 5,00</span>
                     <div class="quantity-controls">
                         <button class="minus" onclick="decrementQuantity(this)" data-price="5.00">-</button>
                         <span id="quantity1">0</span>
@@ -98,7 +110,8 @@
                     </div>
                 </li>
                 <li class="item">
-                    Salgados (Cada) - R$ 7,00
+                    <span class="item-name">Salgados</span>
+                    <span class="item-valuev">R$ 7,00</span>
                     <div class="quantity-controls">
                         <button class="minus" onclick="decrementQuantity(this)" data-price="7.00">-</button>
                         <span id="quantity1">0</span>
@@ -111,7 +124,8 @@
             <h2 id="tituloBebidas">Bebidas</h2>
             <ul>
                 <li class="item">
-                    Água - R$ 3,00
+                    <span class="item-nameb">Água</span>
+                    <span class="item-valueb">R$ 3,00</span> 
                     <div class="quantity-controls">
                         <button class="minus" onclick="decrementQuantity(this)" data-price="3.00">-</button>
                         <span id="quantity1">0</span>
@@ -119,7 +133,8 @@
                     </div>
                 </li>
                 <li class="item">
-                    Chá de Amendoim - R$ 9,00
+                    <span class="item-nameb">Chá de Amendoim</span>
+                    <span class="item-valueb">R$ 9,00</span>
                     <div class="quantity-controls">
                         <button class="minus" onclick="decrementQuantity(this)" data-price="9.00">-</button>
                         <span id="quantity1">0</span>
@@ -127,7 +142,8 @@
                     </div>
                 </li>
                 <li class="item">
-                    Energético Baly (250ml) - R$ 8,00
+                    <span class="item-nameb">Energético Baly (250ml)</span>
+                    <span class="item-valueb">R$ 8,00</span>
                     <div class="quantity-controls">
                         <button class="minus" onclick="decrementQuantity(this)" data-price="8.00">-</button>
                         <span id="quantity1">0</span>
@@ -135,7 +151,8 @@
                     </div>
                 </li>
                   <li class="item">
-                    Refrigerante Copo (300ml) - R$ 5,00
+                    <span class="item-nameb">Refrigerante Copo (300ml)</span>
+                    <span class="item-valueb">R$ 5,00</span>
                     <div class="quantity-controls">
                         <button class="minus" onclick="decrementQuantity(this)" data-price="5.00">-</button>
                         <span id="quantity1">0</span>
@@ -143,7 +160,8 @@
                     </div>
                 </li>
                  <li class="item">
-                    Refrigerante Caçulinha (200ml) - R$ 4,00
+                    <span class="item-nameb">Refrigerante Caçulinha (200ml)</span>
+                    <span class="item-valueb">R$ 4,00</span>
                     <div class="quantity-controls">
                         <button class="minus" onclick="decrementQuantity(this)" data-price="4.00">-</button>
                         <span id="quantity1">0</span>
@@ -151,7 +169,8 @@
                     </div>
                 </li>
                 <li class="item">
-                    Quentão - R$ 8,00
+                    <span class="item-nameb">Quentão</span>
+                    <span class="item-valueb">R$ 8,00</span> 
                     <div class="quantity-controls">
                         <button class="minus" onclick="decrementQuantity(this)" data-price="8.00">-</button>
                         <span id="quantity1">0</span>
@@ -159,7 +178,8 @@
                     </div>
                 </li>
                 <li class="item">
-                    Suco Caixinha (200ml) - R$ 5,00
+                    <span class="item-nameb">Suco Caixinha (200ml)</span>
+                    <span class="item-valueb">R$ 5,00</span>
                     <div class="quantity-controls">
                         <button class="minus" onclick="decrementQuantity(this)" data-price="5.00">-</button>
                         <span id="quantity1">0</span>
@@ -167,15 +187,17 @@
                     </div>
                 </li>
                 <li class="item">
-                    Suco de Milho (200ml) - R$ 9,00
+                    <span class="item-nameb">Suco de Milho (200ml)</span>
+                    <span class="item-valueb">R$ 10,00</span>
                     <div class="quantity-controls">
-                        <button class="minus" onclick="decrementQuantity(this)" data-price="9.00">-</button>
+                        <button class="minus" onclick="decrementQuantity(this)" data-price="10.00">-</button>
                         <span id="quantity1">0</span>
-                        <button class="plus" onclick="incrementQuantity(this)" data-price="9.00">+</button>
+                        <button class="plus" onclick="incrementQuantity(this)" data-price="10.00">+</button>
                     </div>
                 </li>
                 <li class="item">
-                    Vinho Quente - R$ 8,00
+                    <span class="item-nameb">Vinho Quente</span>
+                    <span class="item-valueb">R$ 8,00</span> 
                     <div class="quantity-controls">
                         <button class="minus" onclick="decrementQuantity(this)" data-price="8.00">-</button>
                         <span id="quantity1">0</span>
@@ -185,34 +207,65 @@
             </ul>
         </section>
         <section class="cardapio">
-            <h2 id="tituloDoces">Doces</h2>
+            <h2 id="tituloDoces">Comidas Doces</h2>
             <ul>
                 <li class="item">
-                    Bolo - R$ 6,00
+                    <span class="item-name">Algodão Doce</span>
+                    <span class="item-valueD">R$ 7,00</span>
                     <div class="quantity-controls">
-                        <button class="minus" onclick="decrementQuantity(this)" data-price="6.00">-</button>
+                        <button class="minus" onclick="decrementQuantity(this)" data-price="7.00">-</button>
                         <span id="quantity1">0</span>
-                        <button class="plus" onclick="incrementQuantity(this)" data-price="6.00">+</button>
+                        <button class="plus" onclick="incrementQuantity(this)" data-price="7.00">+</button>
                     </div>
                 </li>
                 <li class="item">
-                    Canjica - R$ 8,00
+                    <span class="item-name">Brigadeirão Sodiê</span>
+                    <span class="item-valueD">R$ 7,00</span>
                     <div class="quantity-controls">
-                        <button class="minus" onclick="decrementQuantity(this)" data-price="8.00">-</button>
+                        <button class="minus" onclick="decrementQuantity(this)" data-price="7.00">-</button>
                         <span id="quantity1">0</span>
-                        <button class="plus" onclick="incrementQuantity(this)" data-price="8.00">+</button>
+                        <button class="plus" onclick="incrementQuantity(this)" data-price="7.00">+</button>
                     </div>
                 </li>
                 <li class="item">
-                    Curau - R$ 9,00
+                    <span class="item-name">Bolo (Fatia)</span>
+                    <span class="item-valueD">R$ 7,00</span>
+                    <div class="quantity-controls">
+                        <button class="minus" onclick="decrementQuantity(this)" data-price="7.00">-</button>
+                        <span id="quantity1">0</span>
+                        <button class="plus" onclick="incrementQuantity(this)" data-price="7.00">+</button>
+                    </div>
+                </li>
+                <li class="item">
+                    <span class="item-name">Bolo de Milho</span>
+                    <span class="item-valueD">R$ 10,00</span>
+                    <div class="quantity-controls">
+                        <button class="minus" onclick="decrementQuantity(this)" data-price="10.00">-</button>
+                        <span id="quantity1">0</span>
+                        <button class="plus" onclick="incrementQuantity(this)" data-price="10.00">+</button>
+                    </div>
+                </li>
+                <li class="item">
+                    <span class="item-name">Canjica</span>
+                    <span class="item-valueD">R$ 9,00</span>
                     <div class="quantity-controls">
                         <button class="minus" onclick="decrementQuantity(this)" data-price="9.00">-</button>
                         <span id="quantity1">0</span>
                         <button class="plus" onclick="incrementQuantity(this)" data-price="9.00">+</button>
                     </div>
                 </li>
-                <li class="item">
-                    Doces no pote - R$ 8,00
+                   <li class="item">
+                    <span class="item-name">Cocada</span>
+                    <span class="item-valueD">R$ 8,00</span> 
+                    <div class="quantity-controls">
+                        <button class="minus" onclick="decrementQuantity(this)" data-price="8.00">-</button>
+                        <span id="quantity1">0</span>
+                        <button class="plus" onclick="incrementQuantity(this)" data-price="8.00">+</button>
+                    </div>
+                </li>
+                    <li class="item">
+                    <span class="item-name">Cocada Cremosa</span>
+                    <span class="item-valueD">R$ 8,00</span> 
                     <div class="quantity-controls">
                         <button class="minus" onclick="decrementQuantity(this)" data-price="8.00">-</button>
                         <span id="quantity1">0</span>
@@ -220,15 +273,26 @@
                     </div>
                 </li>
                 <li class="item">
-                    Fondue (frutas) - R$ 12,00
+                    <span class="item-name">Curau</span>
+                    <span class="item-valueD">R$ 10,00</span> 
                     <div class="quantity-controls">
-                        <button class="minus" onclick="decrementQuantity(this)" data-price="12.00">-</button>
+                        <button class="minus" onclick="decrementQuantity(this)" data-price="10.00">-</button>
                         <span id="quantity1">0</span>
-                        <button class="plus" onclick="incrementQuantity(this)" data-price="12.00">+</button>
+                        <button class="plus" onclick="incrementQuantity(this)" data-price="10.00">+</button>
                     </div>
                 </li>
                 <li class="item">
-                    Fondue (só morango) - R$ 15,00
+                    <span class="item-name">Doces de Pote</span>
+                    <span class="item-valueD">R$ 8,00</span> 
+                    <div class="quantity-controls">
+                        <button class="minus" onclick="decrementQuantity(this)" data-price="8.00">-</button>
+                        <span id="quantity1">0</span>
+                        <button class="plus" onclick="incrementQuantity(this)" data-price="8.00">+</button>
+                    </div>
+                </li>
+                <li class="item">
+                    <span class="item-name">Fondue de Frutas</span>
+                    <span class="item-valueD">R$ 15,00</span> 
                     <div class="quantity-controls">
                         <button class="minus" onclick="decrementQuantity(this)" data-price="15.00">-</button>
                         <span id="quantity1">0</span>
@@ -236,11 +300,48 @@
                     </div>
                 </li>
                 <li class="item">
-                    Maçã do Amor - R$ 6,00
+                    <span class="item-name">Founde de Morango</span>
+                    <span class="item-valueD">R$ 18,00</span> 
                     <div class="quantity-controls">
-                        <button class="minus" onclick="decrementQuantity(this)" data-price="6.00">-</button>
+                        <button class="minus" onclick="decrementQuantity(this)" data-price="18.00">-</button>
                         <span id="quantity1">0</span>
-                        <button class="plus" onclick="incrementQuantity(this)" data-price="6.00">+</button>
+                        <button class="plus" onclick="incrementQuantity(this)" data-price="18.00">+</button>
+                    </div>
+                </li>
+                <li class="item">
+                     <span class="item-name">Maçã do Amor</span>
+                    <span class="item-valueD">R$ 7,00</span> 
+                    <div class="quantity-controls">
+                        <button class="minus" onclick="decrementQuantity(this)" data-price="7.00">-</button>
+                        <span id="quantity1">0</span>
+                        <button class="plus" onclick="incrementQuantity(this)" data-price="7.00">+</button>
+                    </div>
+                </li>
+                <li class="item">
+                    <span class="item-name">Pamonha</span>
+                    <span class="item-valueD">R$ 10,00</span> 
+                    <div class="quantity-controls">
+                        <button class="minus" onclick="decrementQuantity(this)" data-price="10.00">-</button>
+                        <span id="quantity1">0</span>
+                        <button class="plus" onclick="incrementQuantity(this)" data-price="10.00">+</button>
+                    </div>
+                </li>
+                <li class="item">
+                    <span class="item-name">Pipoca Doce</span>
+                    <span class="item-valueD">R$ 5,00</span> 
+                    <div class="quantity-controls">
+                        <button class="minus" onclick="decrementQuantity(this)" data-price="5.00">-</button>
+                        <span id="quantity1">0</span>
+                        <button class="plus" onclick="incrementQuantity(this)" data-price="5.00">+</button>
+                    </div>
+                </li>
+               <li class="item">
+                    <span class="item-name">Pudim de Milho</span>
+                    <span class="item-valueD">R$ 10,00</span> 
+                    <div class="quantity-controls">
+                        <button class="minus" onclick="decrementQuantity(this)" data-price="10.00">-</button>
+                        <span id="quantity1">0</span>
+                        <button class="plus" onclick="incrementQuantity(this)" data-price="10.00">+</button>
                     </div>
                 </li>
             </ul>
@@ -249,31 +350,35 @@
             <h2 id="tituloBrincadeiras">Brincadeiras</h2>
             <ul>
                 <li class="item">
-                    Boliche Americano - R$ 6,00
+                    <span class="item-name">Boliche Americano</span>
+                    <span class="item-valueB">R$ 7,00</span>
                     <div class="quantity-controls">
-                        <button class="minus" onclick="decrementQuantity(this)" data-price="6.00">-</button>
+                        <button class="minus" onclick="decrementQuantity(this)" data-price="7.00">-</button>
                         <span id="quantity1">0</span>
-                        <button class="plus" onclick="incrementQuantity(this)" data-price="6.00">+</button>
+                        <button class="plus" onclick="incrementQuantity(this)" data-price="7.00">+</button>
                     </div>
                 </li>
                 <li class="item">
-                    Jogo do Órgão - R$ 6,00
+                    <span class="item-name">Jogo do Órgão</span>
+                    <span class="item-valueB">R$ 7,00</span>
                     <div class="quantity-controls">
-                        <button class="minus" onclick="decrementQuantity(this)" data-price="6.00">-</button>
+                        <button class="minus" onclick="decrementQuantity(this)" data-price="7.00">-</button>
                         <span id="quantity1">0</span>
-                        <button class="plus" onclick="incrementQuantity(this)" data-price="6.00">+</button>
+                        <button class="plus" onclick="incrementQuantity(this)" data-price="7.00">+</button>
                     </div>
                 </li>
                 <li class="item">
-                    Peixinho - R$ 6,00
+                    <span class="item-name">Peixinho</span>
+                    <span class="item-valueB">R$ 7,00</span>
                     <div class="quantity-controls">
-                        <button class="minus" onclick="decrementQuantity(this)" data-price="6.00">-</button>
+                        <button class="minus" onclick="decrementQuantity(this)" data-price="7.00">-</button>
                         <span id="quantity1">0</span>
-                        <button class="plus" onclick="incrementQuantity(this)" data-price="6.00">+</button>
+                        <button class="plus" onclick="incrementQuantity(this)" data-price="7.00">+</button>
                     </div>
                 </li>
                 <li class="item">
-                    Piscina de Bolinha (5 minutos) - R$ 5,00
+                    <span class="item-name"> Pisci.de Bolinha (5min)</span>
+                    <span class="item-valueB">R$ 5,00</span>
                     <div class="quantity-controls">
                         <button class="minus" onclick="decrementQuantity(this)" data-price="5.00">-</button>
                         <span id="quantity1">0</span>
@@ -281,7 +386,8 @@
                     </div>
                 </li>
                 <li class="item">
-                    Cama elástica (5 minutos) - R$ 5,00
+                    <span class="item-name">Cama Elástica (5min)</span>
+                    <span class="item-valueB">R$ 5,00</span>
                     <div class="quantity-controls">
                         <button class="minus" onclick="decrementQuantity(this)" data-price="5.00">-</button>
                         <span id="quantity1">0</span>
@@ -303,8 +409,146 @@
           </div>
         </div>
     </div>
+    <p class="recado"> <span class="dica">DICA:</span> ADQUIRA SUAS FICHAS PELO VALOR TOTAL DOS ITENS QUE DESEJA CONSUMIR. ASSIM É BEM MAIS RÁPIDO! TODAS AS BARRACAS DÃO TROCO EM FICHAS. AS FICHAS SÃO VÁLIDAS ATÉ O ÚLTIMO DIA DE ARRAIÁ.</p>
+    <section class="patrocinador">
+        <div class="patrocinadores">
+            <img src="imagens/patrocinadores (2).png" alt="patrocinadores" class="logo_patrocinador">
+        </div>
+    </section>
+    <section class="slider">
+        <div class="slider-content">
+            <input type="radio" name="btn-radio" id="radio1">
+            <input type="radio" name="btn-radio" id="radio2">
+            <input type="radio" name="btn-radio" id="radio3">
+            <input type="radio" name="btn-radio" id="radio4">
+            <input type="radio" name="btn-radio" id="radio5">
+            <input type="radio" name="btn-radio" id="radio6">
+            <input type="radio" name="btn-radio" id="radio7">
+            <input type="radio" name="btn-radio" id="radio8">
+            <input type="radio" name="btn-radio" id="radio9">
+            <input type="radio" name="btn-radio" id="radio10">
+            <input type="radio" name="btn-radio" id="radio11">
+            <input type="radio" name="btn-radio" id="radio12">
+            <input type="radio" name="btn-radio" id="radio13">
+            <input type="radio" name="btn-radio" id="radio14">
+            <input type="radio" name="btn-radio" id="radio15">
+            <input type="radio" name="btn-radio"id="radio16">
+            <input type="radio" name="btn-radio" id="radio17">
 
+            <div class="slid-box primeiro">
+                <img class="imagem-slide" src="imagens_patrocinadores/2.png" alt="audioatelier">
+            </div>
+
+            <div class="slid-box">
+                <img class="imagem-slide" src="imagens_patrocinadores/3.png" alt="academiaritmus">
+            </div>
+
+            <div class="slid-box">
+                <img class="imagem-slide" src="imagens_patrocinadores/4.png" alt="camilalucena">
+            </div>
+
+            <div class="slid-box">
+                <img class="imagem-slide" src="imagens_patrocinadores/6.png" alt="piscinalazer">
+            </div>
+
+            <div class="slid-box">
+                <img class="imagem-slide" src="imagens_patrocinadores/7.png" alt="eraodontologia">
+            </div>
+
+            <div class="slid-box">
+                <img class="imagem-slide" src="imagens_patrocinadores/8.png" alt="fvalle">
+            </div>
+
+            <div class="slid-box">
+                <img class="imagem-slide" src="imagens_patrocinadores/10.png" alt="hugoparts">
+            </div>
+
+            <div class="slid-box">
+                <img class="imagem-slide" src="imagens_patrocinadores/11.png" alt="lisboa">
+            </div>
+
+            <div class="slid-box">
+                <img class="imagem-slide" src="imagens_patrocinadores/12.png" alt="mercado_bueno">
+            </div>
+
+            <div class="slid-box">
+                <img class="imagem-slide" src="imagens_patrocinadores/14.png" alt="consultuoria_em_seguros">
+            </div>
+
+            <div class="slid-box">
+                <img class="imagem-slide" src="imagens_patrocinadores/15.png" alt="sodiê_itaimpaulista">
+            </div>
+
+            <div class="slid-box">
+                <img class="imagem-slide" src="imagens_patrocinadores/16.png" alt="superboi">
+            </div>
+            
+            <div class="slid-box">
+                <img class="imagem-slide" src="imagens_patrocinadores/18.png" alt="the_best_açai">
+            </div>
+
+            <div class="slid-box">
+                <img class="imagem-slide" src="imagens_patrocinadores/19.png" alt="vava_avicola">
+            </div>
+
+            <div class="slid-box">
+                <img class="imagem-slide" src="imagens_patrocinadores/21.png" alt="fera_vp">
+            </div>
+
+            <div class="slid-box">
+                <img class="imagem-slide" src="imagens_patrocinadores/23.png" alt="araujo_mecanica dois irmaos_deterquim">
+            </div>
+
+            <div class="slid-box">
+                <img class="imagem-slide" src="imagens_patrocinadores/24.png" alt="grafica jomary_maninho_wn">
+            </div>
+
+            <div class="nav-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+                <div class="auto-btn5"></div>
+                <div class="auto-btn6"></div>
+                <div class="auto-btn7"></div>
+                <div class="auto-btn8"></div>
+                <div class="auto-btn9"></div>
+                <div class="auto-btn10"></div>
+                <div class="auto-btn11"></div>
+                <div class="auto-btn12"></div>
+                <div class="auto-btn13"></div>
+                <div class="auto-btn14"></div>
+                <div class="auto-btn15"></div>
+                <div class="auto-btn16"></div>
+                <div class="auto-btn17"></div>
+            </div>
+
+            <div class="nav-manual">
+                <label for="audioatelier" class="manual-btn"></label>
+                <label for="academiaritmus" class="manual-btn"></label>
+                <label for="camilalucena" class="manual-btn"></label>
+                <label for="piscinalazer" class="manual-btn"></label>
+                <label for="eraodontologia" class="manual-btn"></label>
+                <label for="fvalle" class="manual-btn"></label>
+                <label for="hugoparts" class="manual-btn"></label>
+                <label for="lisboa" class="manual-btn"></label>
+                <label for="mercadobueno" class="manual-btn"></label>
+                <label for="consultuoriaseguros" class="manual-btn"></label>
+                <label for="sodie" class="manual-btn"></label>
+                <label for="superboi" class="manual-btn"></label>
+                <label for="thebest" class="manual-btn"></label>
+                <label for="vavaavicola" class="manual-btn"></label>
+                <label for="fera_vp" class="manual-btn"></label>
+                <label for="araujo_mecanica_deterquim" class="manual-btn"></label>
+                <label for="grafica_maninho_wn" class="manual-btn"></label>
+            </div>
+
+        </div>
+    </section>
     </main>
-    <script src="script.js"></script>
+    <footer>
+       <img src="imagens/rodapé.png" alt="redes sociais" class="rodape"> 
+    </footer>
+    <script src="script.js?v=4"></script>
 </body>
 </html>
