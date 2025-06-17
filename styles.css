@@ -37,9 +37,8 @@ body {
 
 
 header {
-    text-align: center;
-    
-    padding: 20px;
+    display: flex;
+    flex-direction: column-reverse;
     background-color: #630a25;
 }
 
@@ -54,20 +53,32 @@ header .logo {
 }
 
 main {
-    padding: 20px;
+    padding: 11px;
 }
 
 .cardapio {
     margin-bottom: 20px;
 }
 
-.cardapio h2 {
-    background-color: #028d4a;
-    color: #fff;
+.cardapio h2  {
     display: inline-block;
     padding:  10px;
     margin: 0 -20px 20px -20px;
     
+}
+
+.calculadora{
+    background-color: #611b30;
+    color: #fff;
+    margin: 10 -20px 20px -20px;
+    padding: 10px;
+    text-align: center;
+}
+
+#ComidaSalgadas{
+    background-color: #028d4a;
+    color: #fff;
+
 }
 
 #tituloBebidas{
@@ -88,7 +99,10 @@ main {
 
 .cardapio ul {
     list-style-type: none;
-    padding: 0;
+    font-weight: bold;
+    list-style-type: disc;
+    padding-left: 25px;
+
 }
 
 
@@ -98,10 +112,35 @@ main {
     align-items: center;
     padding: 5px 0;
     border-bottom: 1px dotted #000;
-    margin-right: auto;
- 
 }
 
+.cardapio li::before {
+    justify-content: space-between;
+    flex-grow: 1; /* ESTE É O ELEMENTO QUE VAI ESTICAR */
+    display: block; /* Garante que ele se comporte como um bloco dentro do flexbox */
+}
+
+.item-valuev,
+.item-valueb,
+.item-valueD,
+.item-valueB {
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 2px 5px; /* Este padding é crucial para dar um "respiro" ao background ao redor do texto */ 
+    margin-left: auto; /* responsavel por colocar o valor junto a calculadora de preço */
+    white-space: nowrap; /* Impede que o texto do preço quebre a linha */
+    flex-shrink: 0; /* Garante que o elemento não encolha demais */
+    width: 60px; /* Largura fixa – ajuste conforme necessário */
+    text-align: center; /* Centraliza o valor */
+    display: inline-block; /* Garante que a largura funcione */
+}
+
+
+.item-valuev { background-color: #028d4a; }
+.item-valueb { background-color: #e1c624; }
+.item-valueD { background-color: #0097b2; }
+.item-valueB { background-color: #ff7f00; }
 
 .cardapio .quantity {
     width: 50px;
@@ -117,6 +156,7 @@ main {
     background-color: #630a25;
     color: #fff;
     border: none;
+    margin: 10px;
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
@@ -124,6 +164,44 @@ main {
 
 .calculate button:hover {
     background-color: #cc0;
+}
+
+footer{
+    display: flex;
+    width: 105%;
+    margin-top: 70px;
+    justify-content: center;
+}
+
+.recado{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding: 15px;
+    font-size: 11px;
+    font-weight: bold;
+    color: #630a25;
+}
+
+.dica{
+    color: #c6ae03;
+}
+
+.patrocinadores{
+    display: flex;
+    justify-content: center;  /* Centraliza horizontalmente */
+    
+}
+
+.patrocinadores .logo_patrocinador{
+    max-width: 104vw; /* 100% da largura da viewport */
+    height: auto;  /* Mantém proporção */
+    display: block; /* Remove espaço extra */
+    margin: 0;  /* Zera margens */
+    padding: 0;  /* Zera padding */
+}
+
+.rodape{
+    max-width: 100%;
+    height: auto;
 }
 
 #total {
