@@ -1,0 +1,118 @@
+section.slider{
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    overflow: hidden;
+}
+
+.slider-content{
+    width: 1700vw;
+    margin-top: 20px;
+    height: auto;
+    display: flex;
+}
+
+.slider-content input{
+    display: none;
+}
+
+
+.slid-box{
+    width: 100vw;
+    height: auto;
+    position: relative;
+    text-align: center;
+}
+
+.slid-box img{
+    width: 100%;
+    height: auto;
+    max-width: 100vw;
+    object-fit: contain;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+.nav-manual, .nav-auto{
+    position: absolute;
+    width: 100%;
+    margin-top: 243px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;          /* permite quebrar os botões em 2 linhas */
+    padding: 10px 0;
+}
+
+.nav-manual .manual-btn, .nav-auto div{
+    border: 1px solid #630a25;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.nav-manual .manual-btn:not(:last-child), .nav-auto div:not(:last-child){
+    margin-right: 10px;
+}
+
+.nav-manual .manual-btn:hover{
+    background-color: #630a25;
+}
+
+#radio1:checked ~ .nav-auto .auto-btn1, #radio2:checked ~ .nav-auto .auto-btn2, #radio3:checked ~ .nav-auto .auto-btn3, #radio4:checked ~ .nav-auto .auto-btn4, #radio5:checked ~ .nav-auto .auto-btn5, #radio6:checked ~ .nav-auto .auto-btn6, #radio7:checked ~ .nav-auto .auto-btn7, #radio8:checked ~ .nav-auto .auto-btn8, #radio9:checked ~ .nav-auto .auto-btn9, #radio10:checked ~ .nav-auto .auto-btn10, #radio11:checked ~ .nav-auto .auto-btn11, #radio12:checked ~ .nav-auto .auto-btn12, #radio13:checked ~ .nav-auto .auto-btn13, #radio14:checked ~ .nav-auto .auto-btn14, #radio15:checked ~ .nav-auto .auto-btn15, #radio16:checked ~ .nav-auto .auto-btn16 #radio17:checked ~ .nav-auto .auto-btn17{
+    background-color: #630a25;
+}
+
+#radio1:checked ~ .primeiro {
+    margin-left: 0%;
+}
+#radio2:checked ~ .primeiro {
+    margin-left: -5.88235%;
+}
+#radio3:checked ~ .primeiro {
+    margin-left: -11.7647%;
+}
+#radio4:checked ~ .primeiro {
+    margin-left: -17.64705%;
+}
+#radio5:checked ~ .primeiro {
+    margin-left: -23.5294%;
+}
+#radio6:checked ~ .primeiro {
+    margin-left: -29.41175%;
+}
+#radio7:checked ~ .primeiro {
+    margin-left: -35.2941%;
+}
+#radio8:checked ~ .primeiro {
+    margin-left: -41.17645%;
+}
+#radio9:checked ~ .primeiro {
+    margin-left: -47.0588%;
+}
+#radio10:checked ~ .primeiro {
+    margin-left: -52.94115%;
+}
+#radio11:checked ~ .primeiro {
+    margin-left: -58.8235%;
+}
+#radio12:checked ~ .primeiro {
+    margin-left: -64.70585%;
+}
+#radio13:checked ~ .primeiro {
+    margin-left: -70.5882%;
+}
+#radio14:checked ~ .primeiro {
+    margin-left: -76.47055%;
+}
+#radio15:checked ~ .primeiro {
+    margin-left: -82.3529%;
+}
+#radio16:checked ~ .primeiro {
+    margin-left: -88.23525%;
+}
+#radio17:checked ~ .primeiro {
+    margin-left: -94.1176%;
+}
