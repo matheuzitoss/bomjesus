@@ -38,7 +38,7 @@ section.slider{
 .nav-manual, .nav-auto{
     position: absolute;
     width: 100%;
-    margin-top: 243px;
+    margin-top: 238px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;          /* permite quebrar os botões em 2 linhas */
