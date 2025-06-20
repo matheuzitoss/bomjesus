@@ -6,6 +6,41 @@ body {
     padding: 0;
 }
 
+.quantity-controls {
+    display: flex; /* Transforma o contêiner em um flex container */
+    align-items: center; /* Alinha os itens (botões e número) verticalmente no centro */
+    gap: 3px; /* Adiciona um espaço de 8px entre os elementos (botões e número) */
+    flex-shrink: 0; /* Impede que os controles encolham se não houver espaço suficiente */
+}
+
+.quantity-controls button {
+    background-color: #630a25; /* Cor de fundo dos botões */
+    color: #fff; /* Cor do texto/símbolo dos botões */
+    border: none; /* Remove a borda padrão do botão */
+    width: 25px; /* Define a largura dos botões */
+    height: 25px; /* Define a altura dos botões (junto com a largura, cria um quadrado) */
+    border-radius: 50%; /* Faz com que os botões sejam completamente redondos */
+    font-size: 1.3em; /* Tamanho da fonte dos símbolos '+' e '-' */
+    font-weight: bold; /* Deixa o símbolo em negrito */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    display: flex; /* Transforma o botão em um flex container para centralizar o texto */
+    justify-content: center; /* Centraliza o texto/símbolo horizontalmente */
+    align-items: center; /* Centraliza o texto/símbolo verticalmente */
+    padding: 0; /* Remove qualquer padding interno do botão */
+    transition: background-color 0.2s ease; /* Adiciona uma transição suave para a mudança de cor de fundo */
+}
+
+.quantity-controls button:hover {
+    background-color: #611b30; /* Muda a cor de fundo ao passar o mouse */
+}
+
+.quantity-controls span {
+    min-width: 30px; /* Garante que o número da quantidade tenha uma largura mínima para evitar aperto */
+    text-align: center; /* Centraliza o número */
+    font-weight: bold; /* Deixa o número em negrito */
+    font-size: 1.2em; /* Tamanho da fonte do número da quantidade */
+}
+
 /* popup */
 .popup {
     display: none;
@@ -127,6 +162,7 @@ main {
     color: #fff;
     font-weight: bold;
     text-transform: uppercase;
+    margin-right: 5px;
     padding: 2px 5px; /* Este padding é crucial para dar um "respiro" ao background ao redor do texto */ 
     margin-left: auto; /* responsavel por colocar o valor junto a calculadora de preço */
     white-space: nowrap; /* Impede que o texto do preço quebre a linha */
@@ -208,3 +244,4 @@ footer{
     margin-top: 10px;
     font-size: 18px;
 }
+
