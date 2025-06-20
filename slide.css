@@ -38,7 +38,7 @@ section.slider{
 .nav-manual, .nav-auto{
     position: absolute;
     width: 100%;
-    margin-top: 230px;
+    margin-top: 237px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;          /* permite quebrar os botões em 2 linhas */
@@ -115,4 +115,14 @@ section.slider{
 }
 #radio17:checked ~ .primeiro {
     margin-left: -94.1176%;
+}
+
+.botao_patrocinador{
+    display: none;
+}
+
+@media screen and (min-width: 601px) {
+    .nav-manual, .nav-auto {
+        margin-top: 346px;
+    }
 }
